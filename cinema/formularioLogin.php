@@ -29,7 +29,7 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
             header("Location: painel.php");
             exit();
         } else {
-            $message = "Falha ao logar!";
+            $message = "CPF ou senha incorretos!";
         }
     } else {
         $message = "Usuário não encontrado!";
@@ -63,6 +63,8 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
     font-family: Arial, sans-serif;
     color: #fff;
 }
+
+
 
 .container {
     display: flex;
