@@ -5,6 +5,18 @@
     <meta nome="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento </title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://img.freepik.com/vetores-gratis/assentos-de-cinema-vermelho-com-fundo-de-cortinas_1017-38388.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716681600&semt=ais_user') no-repeat center center;
+            background-size: cover;
+
+        }
+        
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -28,7 +40,7 @@
         }
 
         input[type="text"],
-        input[type="email"],
+        input[type="text"],
         input[type="number"] {
             padding: 10px;
             margin-bottom: 10px;
@@ -52,10 +64,9 @@
 </head>
 <body>
     <div class="container">
-        <h2>Pagamento</h2>
         <form action="" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
 
                 <label for="quantia">Valor (R$):</label>
                 <input type="number" id="quantia" name="quantia" required>
@@ -66,16 +77,18 @@
 </body>
 </html>
 <?php
+
+require_once "conexao.php";
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
+    $cpf = $_POST['cpf'];
     $quantia = $_POST['quantia'];
 
-    echo "<h2>Detalhes do Pagamento</h2>";
-    echo "Email: " . $email . "<br>";
-    echo "Valor: R$ " . number_format($quantia, 2, ',', '.') . "<br>";
     
-    // Simulação de um processamento de pagamento bem-sucedido
-    echo "<p>Pagamento processado com sucesso!</p>";
 } else {
     echo "<p>Método de requisição inválido.</p>";
 }
