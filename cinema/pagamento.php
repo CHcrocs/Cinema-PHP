@@ -95,12 +95,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $busca = $banco->query($q);
     
     if ($busca->num_rows > 0) {
-        echo "<p>Pagamento concluído com sucesso!</p>";
+        // echo "<p>Pagamento concluído com sucesso!</p>";
     } else {
-        echo "<p>CPF não encontrado.</p>";
+        // echo "<p>CPF não encontrado.</p>";
     }
     
 } else {
-    echo "<p>Método de requisição inválido.</p>";
+    // echo "<p>Método de requisição inválido.</p>";
 }
 ?>
