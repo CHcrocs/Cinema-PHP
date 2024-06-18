@@ -29,6 +29,6 @@
     </style>
 </head>
 <body>
-    <div> <img src="frame.png" alt="sucesso"></div>
+    <div> <img src="img/frame.png" alt="sucesso"></div>
 </body>
 </html>
