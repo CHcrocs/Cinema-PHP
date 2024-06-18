@@ -26,7 +26,7 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
             $_SESSION['nome'] = $obj->nome;
             $_SESSION['senha'] = $obj->senha;
 
-            header("Location: painel.php");
+            header("Location:Filmes.php");
             exit();
         } else {
             $message = "CPF ou senha incorretos!";
