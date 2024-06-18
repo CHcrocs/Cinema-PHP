@@ -88,9 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         .message {
             background-color: rgba(255, 215, 0, 0.8);
-            /* Fundo dourado semi-transparente */
             color: #000;
-            /* Texto preto */
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -98,7 +96,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             font-weight: bold;
             text-align: center;
             width: 300px;
-            /* Alinhar com a largura do formulário */
         }
     </style>
 </head>
@@ -114,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="text" id="cpf" name="cpf" required>
 
             <label for="quantia">Valor (R$):</label>
-            <input type="number" id="quantia" name="quantia" required disabled placeholder="12,99">
+            <input type="number" id="quantia" name="quantia" required disabled placeholder="12,99 por assento">
 
             <button type="submit">Pagar</button>
         </form>

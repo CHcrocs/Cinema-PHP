@@ -29,6 +29,6 @@
     </style>
 </head>
 <body>
-    <div> <img src="https://s.dicio.com.br/sucesso.jpg" alt="sucesso"></div>
+    <div> <img src="frame.png" alt="sucesso"></div>
 </body>
 </html>
