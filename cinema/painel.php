@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: url('https://img.freepik.com/vetores-gratis/assentos-de-cinema-vermelho-com-fundo-de-cortinas_1017-38388.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716681600&semt=ais_user') no-repeat center center;
+        background: url('img/background.jpg') no-repeat center center;
         background-size: cover;
 
     }
